@@ -4,56 +4,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/product-style.css">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7COpen+Sans&display=swap"/>
+
     <title>Product Page</title>
 </head>
 <body>
-<font face="Segoe UI">
 
-        <header align="center">
-            <h1><font size="8">PensilKu</font></h1>
-            <table align="center" cellpadding="10">
-                <tr>
-                    <td><font size="3">BERANDA</font></td>
-                    <td><font size="3">PRODUK</font></td>
-                    <td><font size="3">TENTANG KAMI</font></td>
-                </tr>
-            </table>
-        </header>
-        
-        <br><br>
-
-        <table  width="80%" align="center" cellspacing="0" cellpadding="10"> 
-        <tr >
-            <td><img src="img/pencil.jpg" alt=""></td>
-            <td width="60%">
-                <h1>Pensil 2B</h1>
-                <table cellspacing="0" cellpadding="5" >
-                    <tr>
-                        <td><img src="img/star-rating.png" alt="" width="100px"></td>
-                        <td><p>(200 reviews)</p></td>
-                    </tr>
-                </table>
-                <p>Pensil berkualitas tinggi berbahan Graphite. Dengan bahan dasar pilihan, pensil ini empuk digunakan. Bentuk hexagonal yang kekinian sehingga tidak mudah menggelinding saat digunakan. Cocok untuk anak sekolah, pekerja kantoran, ataupun di rumah. Mudah dihapus, diraut dan tidak mudah patah.</p>
-                <h2>Rp2.000</h2>
-                <hr>
-
-                <h4>Quantity</h4>
-                <table border="1" cellspacing="0" cellpadding="10">
-                    <tr>
-                        <td bgcolor="#f2f2f2">-</td>
-                        <td>1</td>
-                        <td bgcolor="#f2f2f2">+</td>
-                    </tr>
-                </table>
-                <br>
-                <button type="submit">Tambah ke keranjang</button>
-            </td>
-        </tr>
-    </table>
+    <!-- header -->
+    <header>
+        <img
+        class="logo"
+        src="img/logo-pensilku.png"
+        width="200"
+        alt="Logo"
+        />
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Beranda</a></li>
+                <li><a href="./assets/src/product.html" class="active">Produk</a></li>
+                <li><a href="./assets/src/about.html">Tentang Kami</a></li>
+            </ul>
+        </nav>
+        <button>Buat Akun</button>
+    </header>
+    <!-- akhir header -->
     
-    <footer>
-        
-    </footer>
-</font>
+    <!-- content -->
+    <div class="container">
+        <table > 
+            <tr>
+                <td class="d-flex">
+                    <!-- product image -->
+                    <div class="d-flex image-container">
+                        <img src="img/arrow.png" alt="" class="arrow-next arrow-left">
+                        <img src="img/pencil.jpg" alt="" class="product">
+                        <img src="img/arrow.png" alt="" class="arrow-next">
+                    </div>
+                    <!-- akhir product image -->
+
+                    <!-- product desc -->
+                    <div>
+                        <div class="desc-container">
+                            <h1>Pensil 2B</h1>
+                            <div class="d-flex review">
+                                <div><img src="img/star-rating.png" alt="" width="100px"></div>
+                                <div>(200 reviews)</div>
+                            </div>
+                            <p>Pensil berkualitas tinggi berbahan Graphite. Dengan bahan dasar pilihan, pensil ini empuk digunakan. Bentuk hexagonal yang kekinian sehingga tidak mudah menggelinding saat digunakan. Cocok untuk anak sekolah, pekerja kantoran, ataupun di rumah. Mudah dihapus, diraut dan tidak mudah patah.</p>
+                            <div class="harga">Rp2.000</div>
+                            <div class="line"></div>
+                            <div class="d-flex quantity">
+                                <h4>QUANTITY</h4>
+                                <div class="jumlah-quantity d-flex">
+                                    <div>-</div>
+                                    <div class="jumlah">1</div>
+                                    <div>+</div>
+                                </div>
+                            </div>
+                            <button type="submit">Tambah ke keranjang</button>
+                        </div>
+                    </div>
+                    <!-- akhir product desc -->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- product reviews -->
+                    <div class="review-container d-flex">
+                        <h3>REVIEWS</h3>
+                        <div class="d-flex align-items-center">
+                            <div class="d-flex rating">
+                                <div><span>4.8</span> / 5</div>
+                                <img src="img/star-rating.png" alt="" width="150px">
+                                <p>(200) Reviews</p>
+                            </div>
+                            <div class="d-flex detail-rating">
+                                <div class="item">
+                                    <div class="d-flex left">
+                                        <img src="img/star.png" alt="" width="20px">
+                                        <div>5</div>
+                                        <div class="line-rating line-full"></div>
+                                    </div>
+                                    <div>160</div>
+                                </div>
+                                <div class="item">
+                                    <div class="d-flex left">
+                                        <img src="img/star.png" alt="" width="20px">
+                                        <div>4</div>
+                                        <div class="line-rating ">
+                                            <div class=" line-almost-full"></div>
+                                        </div>
+                                    </div>
+                                    <div>40</div>
+                                </div>
+                                <div class="item">
+                                    <div class="d-flex left">
+                                        <img src="img/star.png" alt="" width="20px">
+                                        <div>3</div>
+                                        <div class="line-rating"></div>
+                                    </div>
+                                    <div>0</div>
+                                </div>
+                                <div class="item">
+                                    <div class="d-flex left">
+                                        <img src="img/star.png" alt="" width="20px">
+                                        <div>2</div>
+                                        <div class="line-rating"></div>
+                                    </div>
+                                    <div>0</div>
+                                </div>
+                                <div class="item">
+                                    <div class="d-flex left">
+                                        <img src="img/star.png" alt="" width="20px">
+                                        <div>1</div>
+                                        <div class="line-rating"></div>
+                                    </div>
+                                    <div>0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- akhir product reviews -->
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- akhir content -->
 </body>
 </html>
